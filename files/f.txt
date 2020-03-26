@@ -1,0 +1,4 @@
+1、FileWriter（extends InputStreamWriter extends Writer），文件字符输出流，逐个输出内存中字符
+				FileWriter(File file)，向指定文件打开文件字符输出流
+				FileWriter(String name)，向指定文件路径打开文件字符输出流
+				write只是把写入的内容写入到缓冲区，使用flush()后才刷新到文件。flush()后流可以继续使用，close()是把内容刷新到文件中，并且关闭。
