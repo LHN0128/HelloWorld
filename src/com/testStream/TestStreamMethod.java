@@ -13,7 +13,7 @@ public class TestStreamMethod {//注意Stream有类型Stream<>来定义stream是
         stream2.filter((String e)->{return e.startsWith("1");});
         Stream<String> stream3 = Stream.of("1","2","3","4");
 //        使用map方法将String类型的Stream映射为int类型的Stream
-        Stream<Integer> stream4 = stream3.map((String i)->{return Integer.parseInt(i);});
+        Stream<Integer> stream4 = stream3.map(i->Integer.parseInt(i));
 //          使用count方法来统计流中元素个数
         System.out.println(stream4.count());//4
         Stream<Integer> stream5 = Stream.of(1,2,3,4,5,6,7,8);
